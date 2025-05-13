@@ -1,7 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Weather = ({ data }) => {
+interface WeatherProps {
+  data: {
+    temperature: number;
+    condition: string;
+    
+  };
+}
+const Weather: React.FC<WeatherProps> = ({ data }) => {
   console.log(data);
 
   return (
