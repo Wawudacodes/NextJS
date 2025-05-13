@@ -6,8 +6,6 @@ import axios from "axios";
 import {useState} from "react";
 import { BsSearch } from "react-icons/bs"; 
 import Weather from "@/app/components/Weather";
-import DuallBall from "@public/DualBall.gif";
-import Infinity from "@public/Infinity.gif";
 
 export default function Home() {
 
@@ -32,7 +30,7 @@ export default function Home() {
   if(loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-black/80">
-        <img src="/Infinity.gif" alt="Loading..." width={100} height={100} />
+        <Image src="/Infinity.gif" alt="Loading..." width={100} height={100} />
       </div>
     );
   } else {
